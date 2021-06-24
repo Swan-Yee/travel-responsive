@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+
+$primary: #14505c;
+
+$font-family: 'Open Sans', 'Raleway', sans-serif;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+// custom css
+.nav-link.active{
+    border-bottom: 1px solid var(--bs-white);
+}
+
+.nav-link {
+   margin-right: 50px;
+//    color: #fff !important;
+}
+
+.nav__list{
+    position: relative;
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+.show-menu{
+    right: 0 !important;
+}
+
+.nav-toggle{
+     cursor: pointer;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+    .nav__list{
+        position: fixed;
+        background-color: var(--bs-white);
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        box-shadow: -1px 0 4px var(--bs-primary);
+        padding: 3rem;
+        transition: .4s;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .nav-link{
+        color: var(--bs-dark) !important;
+    }
+
+
+    #nav-close{
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-link.active{
+        border-bottom: 1px solid #14505c;
+    }
+}

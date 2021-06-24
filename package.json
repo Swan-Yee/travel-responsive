@@ -1,0 +1,24 @@
+{
+  "name": "travel.github.io",
+  "version": "1.0.0",
+  "description": "travelweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swan-Yee/travel.github.io.git"
+  },
+  "author": "swan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swan-Yee/travel.github.io/issues"
+  },
+  "homepage": "https://github.com/Swan-Yee/travel.github.io#readme",
+  "dependencies": {
+    "5": "0.0.1",
+    "bootstrap": "^5.0.2",
+    "remixicon": "^2.5.0"
+  }
+}
