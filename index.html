@@ -13,34 +13,77 @@
 </head>
 <body>
     <!-- ================= nav-section ======================== -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="#">Travel</a>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Travel</a>
 
-            <div class="nav__list" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#discover">Discover</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#places">Places</a>
-                    </li>
-                </ul>
+                <div class="nav__list" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#discover">Discover</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#places">Places</a>
+                        </li>
+                    </ul>
 
-                <i class="ri-close-line nav__close d-lg-none d-md-none d-sm-block" id="nav-close"></i>
+                    <i class="ri-close-line nav__close d-lg-none d-md-none d-sm-block" id="nav-close"></i>
+                </div>
+
+            <div class="nav__toggle d-lg-none d-md-none d-sm-block text-white" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
             </div>
+        </nav>
+    </header>
 
-        <div class="nav__toggle d-lg-none d-md-none d-sm-block text-white" id="nav-toggle">
-                <i class="ri-function-line"></i>
+    <main class="main">
+        <section class="home" id="home">
+            <img src="assets/img/home1.jpg" alt="" srcset="" class="home__img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 home__container">
+                        <div class="main-content">
+                            <span class="text-white mb-5">Discover your place</span>
+                            <h1 class="h1 text-white font-weight-light my-5 main-title-text">Explore The <br> Best <b> Beautiful <br> Beaches </b></h1>
+                            <a href="#" class="btn btn-primary">Explore</a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#" class="social-icon">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                        <div class="home__info bg-primary">
+                            <div class="">
+                            <span class="text-white">
+                                5 best places to visit
+                            </span>
+                            <div class="btn btn-link" style="display: flex; gap: 1rem;">
+                                More <i class="ri-arrow-right-line"></i>
+                            </div>
+                            </div>
+                            <div class="home__info-overlay">
+                                <img src="assets/img/home2.jpg" alt="" srcset="" class="home__info-img img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </section>
+    </main>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ===================== local-JS =========================== -->
