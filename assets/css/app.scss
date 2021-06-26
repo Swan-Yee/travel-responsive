@@ -9,7 +9,7 @@ $font-family: 'Open Sans', 'Raleway', sans-serif;
 
 // custom css
 body,h1,span{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .nav-link.active{
@@ -75,6 +75,10 @@ body,h1,span{
     gap: 1.5rem;
 }
 
+.about{
+    height: 100vh;
+}
+
 .main-content{
     margin: 25px 0;
 }
@@ -98,6 +102,20 @@ body,h1,span{
 .main-title-text{
     font-size: 4rem;
 }
+
+.about_img{
+    width: 100%;
+    height: auto;
+}
+
+.about_img1{
+    width: 250px;
+}
+
+.about_img2{
+    width: 350px;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 992px) {
     .nav__list{
         position: fixed;
@@ -154,5 +172,17 @@ body,h1,span{
         right: 1rem;
         bottom: 1rem;
         width: 300px;
+    }
+
+    .about-text{
+        text-align: center;
+    }
+
+    .about_img1 {
+        width: 200px;
+    }
+
+    .about_img2 {
+        width: 100px;
     }
 }
