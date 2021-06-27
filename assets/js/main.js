@@ -27,3 +27,18 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// swiper js for discover section
+
+      var swiper = new Swiper(".discover-swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+          loop: true,
+        spaceBetween: 32,
+        coverflowEffect: {
+          rotate: 0,
+        },
+      });
