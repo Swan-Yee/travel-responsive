@@ -11634,6 +11634,68 @@ body, h1, .h1, span {
   top: auto;
 }
 
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-left {
+  background-image: none;
+}
+
+.exp__img-1 {
+  width: 463px;
+  margin-right: 7rem;
+}
+
+.exp__img-2 {
+  width: 200px;
+  top: 4rem;
+  right: 0;
+  position: absolute;
+}
+
+.exp__img_parent {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.discover-height {
+  height: 75vh;
+}
+
+.experience-height {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .exp__img_parent {
+    width: 30%;
+    margin: 0 6rem;
+  }
+  .exp__img-1 {
+    width: 400px !important;
+  }
+  .exp__img-2 {
+    width: 180px;
+    position: absolute;
+    top: 4rem;
+    right: -18rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .exp__img_parent {
+    width: 50%;
+    margin: 0 2rem;
+  }
+  .exp__img-1 {
+    width: 300px !important;
+  }
+  .exp__img-2 {
+    width: 120px !important;
+    position: absolute;
+    top: 3rem;
+    right: -10rem;
+  }
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .nav__list {
     position: fixed;
@@ -11707,6 +11769,13 @@ body, h1, .h1, span {
   .about_img2 {
     width: 180px;
     height: auto;
+  }
+  .experience-height {
+    height: 80vh;
+  }
+  .exp__img-1 {
+    width: 263px;
+    margin-right: 2rem;
   }
 }
 /*# sourceMappingURL=app.css.map */
