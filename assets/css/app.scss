@@ -160,6 +160,25 @@ body,h1,span{
     height: 100vh;
 }
 
+.video__content{
+    position: relative;
+}
+
+.video__button{
+    padding: 0.5rem 2rem;
+    position: absolute;
+    right: 12rem;
+    bottom: -1rem;
+}
+
+.video__button-icon{
+    font-size: 2.2rem;
+}
+
+#video-file{
+    width: 75%;
+}
+
 @media only screen and (max-width: 768px) {
     .exp__img_parent {
         width: 30%;
@@ -176,6 +195,10 @@ body,h1,span{
         top: 4rem;
         right: -18rem;
     }
+
+       .video__button {
+           right: 7rem;
+       }
 }
 
 @media only screen and (max-width: 425px) {
@@ -185,14 +208,19 @@ body,h1,span{
     }
 
     .exp__img-1 {
-        width: 300px !important;
+        width: 250px !important;
     }
 
     .exp__img-2 {
         width: 120px !important;
         position: absolute;
         top: 3rem;
-        right: -10rem;
+        right: -6rem;
+    }
+
+    .video__button {
+        padding: 0.1rem 1rem;
+        right: 5rem;
     }
 }
 
