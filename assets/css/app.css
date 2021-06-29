@@ -11503,6 +11503,15 @@ body, h1, .h1, span {
   font-family: 'Raleway', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul > li {
+  margin-bottom: 10px;
+}
+
 .nav-link.active {
   border-bottom: 1px solid var(--bs-white);
 }
@@ -11538,6 +11547,10 @@ body, h1, .h1, span {
 .social-icon,
 .social-icon:hover {
   color: var(--bs-white);
+  text-decoration: none;
+}
+
+.footer__social {
   text-decoration: none;
 }
 
@@ -11671,7 +11684,7 @@ body, h1, .h1, span {
 .video__button {
   padding: 0.5rem 2rem;
   position: absolute;
-  right: 12rem;
+  right: 18rem;
   bottom: -1rem;
 }
 
@@ -11680,7 +11693,79 @@ body, h1, .h1, span {
 }
 
 #video-file {
-  width: 75%;
+  width: 800px;
+}
+
+.card-star-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+
+.card-btn-overlay {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  border-radius: 0;
+}
+
+.card-button {
+  padding: 0.5rem 1rem;
+}
+
+.place__card,
+.place__img {
+  height: 263px;
+}
+
+.subscribe__form {
+  background-color: var(--bs-white);
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscribe__input {
+  border: none;
+  outline: none;
+}
+
+.sponsor-container {
+  justify-items: center;
+  row-gap: 3.5rem;
+}
+
+.sponsor__img {
+  width: 90px;
+  -webkit-filter: invert(0.7);
+          filter: invert(0.7);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sponsor__content:hover .sponsor-img {
+  -webkit-filter: invert(0.5);
+          filter: invert(0.5);
+}
+
+.sponsor__content {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .video__button {
+    right: 7rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -11700,6 +11785,9 @@ body, h1, .h1, span {
   .video__button {
     right: 7rem;
   }
+  #video-file {
+    width: 600px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -11718,7 +11806,14 @@ body, h1, .h1, span {
   }
   .video__button {
     padding: 0.1rem 1rem;
-    right: 5rem;
+    right: 2rem;
+  }
+  #video-file {
+    width: 250px;
+  }
+  .place__card,
+  .place__img {
+    height: 230px;
   }
 }
 
