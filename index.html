@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="node_modules/remixicon/fonts/remixicon.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -15,7 +17,7 @@
 <body>
     <!-- ================= nav-section ======================== -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-lg nav-bg-color" id="scroll-header">
             <div class="container">
                 <a class="navbar-brand" href="#">Travel</a>
 
@@ -38,7 +40,7 @@
                     <i class="ri-close-line nav__close d-lg-none d-md-block d-sm-block" id="nav-close"></i>
                 </div>
 
-            <div class="nav__toggle d-lg-none d-md-block d-sm-block text-white" id="nav-toggle">
+            <div class="nav__toggle d-lg-none d-md-block d-sm-block" id="nav-toggle">
                     <i class="ri-function-line"></i>
                 </div>
             </div>
@@ -47,17 +49,17 @@
 
     <main class="main">
         <!-- ================ home-section ======================= -->
-        <section class="home" id="home">
+        <section class="home headline" id="home">
             <img src="assets/img/home1.jpg" alt="" srcset="" class="home__img">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 home__container">
-                        <div class="main-content pt-5">
+                    <div class="col-12 home__container ">
+                        <div class="main-content pt-5 ">
                             <span class="text-white">Discover your place</span>
                             <h1 class="h1 text-white font-weight-light mb-5 main-title-text">Explore The <br> Best <b> Beautiful <br> Beaches </b></h1>
                             <a href="#" class="btn btn-primary">Explore</a>
                         </div>
-                        <div class="social-icon">
+                        <div class="social-icon animate__animated animate__flash">
                             <a href="#" class="social-icon">
                                 <i class="ri-facebook-box-fill"></i>
                             </a>
@@ -68,7 +70,7 @@
                                 <i class="ri-twitter-fill"></i>
                             </a>
                         </div>
-                        <div class="home__info bg-primary">
+                        <div class="home__info bg-primary animate__animated animate__backInRight">
                             <div class="">
                             <span class="text-white">
                                 5 best places to visit
@@ -87,9 +89,9 @@
         </section>
 
         <!-- ================ about-section ====================== -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="row vh-100 align-items-center">
+        <section class="about " id="about">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6 col-sm-12">
                         <div class="about-text">
                             <h3 class="h3">
@@ -103,7 +105,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 about_img">
+                    <div class="col-lg-7 col-md-6 col-sm-12 about_img animate__animated animate__fadeInRight headline">
                          <img src="assets/img/about1.jpg" alt="" srcset="" class="about_img1">
                          <img src="assets/img/about2.jpg" alt="" srcset="" class="about_img2">
                     </div>
@@ -113,9 +115,9 @@
 
         <!-- ================ discover-section ==================== -->
         <section class="discover" id="discover">
-            <div class="container">
-                <div class="row discover-height my-5">
-                    <div class="row">
+            <div class="container my-5">
+                <div class="row my-5">
+                    <div class="row my-5">
                         <div class="col-12">
                             <div class="discover-title">
                                 <h3 class="text-center">
@@ -128,7 +130,7 @@
                         <div class="discover-swiper swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="card bg-dark text-white swiper-slide">
-                                    <img src="assets/img/discover1.jpg" class="card-img" alt="..." height="263">
+                                    <img src="assets/img/discover1.jpg" class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h3 class="card-title">Hvar</h3>
                                         <p class="card-text">18 tours available</p>
@@ -164,7 +166,7 @@
 
         <!-- =============== Experience-section =================== -->
         <section class="experience-section">
-            <div class="container">
+            <div class="container py-5">
                 <div class="row experience-height my-5">
                     <div class="col-12">
                         <h3 class="text-center">
@@ -241,7 +243,7 @@
                 <div class="row">
                     <div class="col"></div>
                     <div class="col-lg-8 col-sm-10">
-                        <div class="row justify-content-between flex-wrap g-4 place__container">
+                        <div class="row flex-wrap g-4 place__container">
                                 <div class="card bg-dark text-white place__card">
                                     <img src="assets/img/place1.jpg" class="card-img place__img" alt="..." >
                                     <div class="card-star-overlay">
@@ -516,6 +518,11 @@
         </div>
     </footer>
 
+    <div class="scroll-up" id="scroll-up">
+        <a href="#home" class="btn btn-primary scroll__up-button">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ===================== local-JS =========================== -->
